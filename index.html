@@ -10,29 +10,31 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css" />
     <title>Cocktail DB</title>
   </head>
   <body>
     <div
-      class="landing-banner d-flex flex-column w-100 justify-content-center align-items-center mt-5"
+      style="background-image: url(images/bar.jpg); background-size: cover"
+      class="landing-banner d-flex flex-column vw-100 vh-100 justify-content-center align-items-center"
     >
-      <h1 class="">Welcome to the COCKtail search</h1>
-      <div class="search-container d-flex">
-        <input
-          type="text"
-          class="w-100 form-control"
-          id="cocktail-searchbar"
-          placeholder="Search for cocktail"
-          value=""
-        />
-        <input
-          type="submit"
-          id="cocktail-search-button"
-          class="btn btn-primary"
-          value="Search"
-        />
-      </div>
+      <h1 class="text-light shadow-lg p-3">Welcome to the COCKtail search</h1>
+      <input
+        type="text"
+        class="w-25 mb-2"
+        id="cocktail-searchbar"
+        placeholder="Search for cocktail"
+        value=""
+      />
+      <input
+        type="submit"
+        id="cocktail-search-button"
+        class="btn btn-primary"
+        value="Search"
+      />
     </div>
+    <h1 id="show-results-text">Results</h1>
+    <div class="cards"></div>
   </body>
 </html>
 <script src="js.js"></script>
