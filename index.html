@@ -16,7 +16,7 @@
   <body>
     <div
       style="background-image: url(images/bar.jpg); background-size: cover"
-      class="landing-banner d-flex flex-column vw-100 vh-100 justify-content-center align-items-center"
+      class="landing-banner d-flex flex-column w-100 vh-100 justify-content-center align-items-center"
     >
       <h1 class="text-light shadow-lg p-3">Welcome to the COCKtail search</h1>
       <input
@@ -33,8 +33,18 @@
         value="Search"
       />
     </div>
-    <h1 id="show-results-text">Results</h1>
-    <div class="cards"></div>
+    <h1 id="show-results-text" class="text-center my-3">Results</h1>
+    <div
+      class="cards-container d-flex gap-3 flex-wrap"
+      style="margin: auto 10%"
+    >
+      <div class="card" style="width: 18rem">
+        <img src="" class="card-img-top" id="cocktail-img" alt="..." />
+        <div class="card-body">
+          <p class="card-text"></p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
 <script src="js.js"></script>

@@ -11,7 +11,7 @@ searchButton.addEventListener("click", () => {
         cocktailSearchbar.value
       )}`;
       for (let i = 0; i < data.drinks.length; i++) {
-        console.log(data.drinks[i].strDrink);
+        console.log(data.drinks[i]);
       }
     })
   );
@@ -21,3 +21,5 @@ const capitalize = (word) => {
   let capitalizedWord = word.charAt(0).toUpperCase() + word.slice(1);
   return capitalizedWord;
 };
+
+// data.drinks[i].strDrink = drinks
