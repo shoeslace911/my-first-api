@@ -22,4 +22,5 @@ const capitalize = (word) => {
   return capitalizedWord;
 };
 
-// data.drinks[i].strDrink = drinks
+// data.drinks[i].strDrink = drink name
+// strDrinkThumb = images
