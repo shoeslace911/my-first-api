@@ -1,6 +1,10 @@
 let cocktailSearchbar = document.getElementById("cocktail-searchbar");
 let searchButton = document.getElementById("cocktail-search-button");
 let showingResults = document.getElementById("show-results-text");
+let cocktailImg = document.getElementById("cocktail-img");
+let cocktailName = document.getElementById("cocktail-name");
+let cocktailInstructions = document.getElementById("cocktail-instructions");
+let cocktailIngredients = document.getElementById("cocktail-ingredients");
 
 searchButton.addEventListener("click", () => {
   fetch(
@@ -11,7 +15,9 @@ searchButton.addEventListener("click", () => {
         cocktailSearchbar.value
       )}`;
       for (let i = 0; i < data.drinks.length; i++) {
-        console.log(data.drinks[i]);
+        cocktailImg.src = data.drinks[i].strDrinkThumb;
+        cocktailName.innerHTML = data.drinks[i].strDrink;
+        // create new elements each loop
       }
     })
   );
