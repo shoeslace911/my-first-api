@@ -33,8 +33,10 @@ searchButton.addEventListener("click", () => {
         >
           <h1 id="cocktail-name">${data.drinks[i].strDrink}</h1>
           <ul id="cocktail-ingredients">
+          <li>${console.log("no")}</li>
           </ul>
           <p id="cocktail-instructions">
+          ${data.drinks[i].strInstructions}
           </p>
         </div>
       </div>`
@@ -49,5 +51,6 @@ const capitalize = (word) => {
   return capitalizedWord;
 };
 
+const ingredientsCounter = (ingredient) => {};
 // data.drinks[i].strDrink = drink name
 // strDrinkThumb = images
